@@ -1,0 +1,117 @@
+/* Container for the entire header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the logo section */
+  .header-logo h1 {
+    font-size: 2rem;
+    color: #f9a825;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  /* Navigation container */
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* Styling for the VP logo inside header */
+  .header-nav h1 {
+    font-size: 2.5rem;
+    color: #f9a825;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for the navigation list (Upload and Videos) */
+  .header-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .linkitems{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header-nav ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: 600;
+  }
+  
+  /* Hover effect for the navigation items */
+  .header-nav ul li:hover {
+    color: #f9a825;
+  }
+
+  
+  
+  /* Styling for the Logout button */
+  .header-nav button {
+    padding: 0.5rem 1rem;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect for the Logout button */
+  .header-nav button:hover {
+    background-color: #c17900;
+    transform: scale(1.05);
+  }
+
+  .header-logo h1:hover {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .header-logo h1 {
+      font-size: 1.8rem;
+    }
+  
+    .header-nav {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .header-nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .header-nav button {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+  
